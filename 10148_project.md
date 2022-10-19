@@ -51,3 +51,5 @@ D:\programmieren\PHP\10148_PHPWithMySQL2022_Build5PHPHAndMySQLProjects
 - https://www.udemy.com/course/php-with-mysql-2022-build-5-php-and-mysql-projects/learn/lecture/34090602#overview
     MySQLServer: udemy / Udemy2022##
 
+9. Register Page
+- https://www.udemy.com/course/php-with-mysql-2022-build-5-php-and-mysql-projects/learn/lecture/34090612#overview
