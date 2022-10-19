@@ -53,3 +53,6 @@ D:\programmieren\PHP\10148_PHPWithMySQL2022_Build5PHPHAndMySQLProjects
 
 9. Register Page
 - https://www.udemy.com/course/php-with-mysql-2022-build-5-php-and-mysql-projects/learn/lecture/34090612#overview
+
+10. Logging Users in
+- https://www.udemy.com/course/php-with-mysql-2022-build-5-php-and-mysql-projects/learn/lecture/34090730#overview
