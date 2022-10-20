@@ -13,6 +13,9 @@
 //check for the row count
 
 //and use the password_verify function
+if(isset($_Session['username'])) {
+    header("location: index.php");
+}
 
 if(isset($_POST['submit'])) {
     if($_POST['email'] == '' or $_POST['password'] == '') {
@@ -21,12 +24,22 @@ if(isset($_POST['submit'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        $login = $conn->query("SELECT * FROM users where email = '$email'");
+        $login = $conn->query("SELECT * FROM users WHERE email = '$email'");
+
         $login->execute();
+
         $data = $login->fetch(PDO::FETCH_ASSOC);
+
+
         if($login->rowCount() > 0) {
+
             if(password_verify($password, $data['mypassword'])) {
-                echo "logged in";
+
+
+                $_SESSION['username'] = $data['username'];
+                $_SESSION['email'] = $data['email'];
+
+                header("location: index.php");
             } else {
                 echo "email or password is wrong";
             }
@@ -34,7 +47,6 @@ if(isset($_POST['submit'])) {
             echo "email or password is wrong";
         }
     }
-
 }
 
 ?>
